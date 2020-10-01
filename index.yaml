@@ -1,43 +1,36 @@
 apiVersion: v1
 entries:
-  log-gateway:
+  gateway:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-30T13:46:55.223536425Z"
+    created: "2020-10-01T11:43:06.750498034Z"
     description: A Helm chart for Kubernetes
-    digest: 8200eccd16bfb41ac34bfbe764928ed34b71419c4a3665fcfb520bddc7476bcc
-    name: log-gateway
+    digest: a92143965ad54290631eb56223b84efeeb5db39b9faff8677f64331d4b6b7580
+    name: gateway
     type: application
     urls:
-    - https://gajjalareddy7012.github.io/helm_repository_new/log-gateway-0.1.0.tgz
+    - https://gajjalareddy7012.github.io/helmcharts/gateway-0.1.0.tgz
     version: 0.1.0
-  log-search:
+  indexer:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-30T13:46:55.224074469Z"
+    created: "2020-10-01T11:43:06.751092372Z"
     description: A Helm chart for Kubernetes
-    digest: 2658f2ae0bb3ac8eacfa20d15d8519b769b25aa1fce9083d493bff97226371f6
-    name: log-search
+    digest: 3842bf98b45b16f7fb654f28a72ab631630c7fd01400b088fb4b883bcd1f77a4
+    name: indexer
     type: application
     urls:
-    - https://gajjalareddy7012.github.io/helm_repository_new/log-search-0.1.0.tgz
+    - https://gajjalareddy7012.github.io/helmcharts/indexer-0.1.0.tgz
     version: 0.1.0
-  logindexer:
+  search:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-30T13:46:55.226412825Z"
-    dependencies:
-    - name: log-search
-      repository: '@fantastic'
-      version: 0.1.0
-    - name: log-gateway
-      repository: '@fantastic'
-      version: 0.1.0
+    created: "2020-10-01T11:43:06.751692009Z"
     description: A Helm chart for Kubernetes
-    digest: 59e37364b9051ce60a64118ac03878e713fc88eeeeb74e7da1d46855c4d0e3eb
-    name: logindexer
+    digest: 26dce1f461a56179595c9699337c05245bc6c0dfe875c42b825a954bcf74f79c
+    name: search
     type: application
     urls:
-    - https://gajjalareddy7012.github.io/helm_repository_new/logindexer-0.1.0.tgz
+    - https://gajjalareddy7012.github.io/helmcharts/search-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-30T13:46:55.222834522Z"
+generated: "2020-10-01T11:43:06.749682775Z"
