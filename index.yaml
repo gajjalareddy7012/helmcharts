@@ -1,0 +1,43 @@
+apiVersion: v1
+entries:
+  log-gateway:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-09-30T13:46:55.223536425Z"
+    description: A Helm chart for Kubernetes
+    digest: 8200eccd16bfb41ac34bfbe764928ed34b71419c4a3665fcfb520bddc7476bcc
+    name: log-gateway
+    type: application
+    urls:
+    - https://gajjalareddy7012.github.io/helm_repository_new/log-gateway-0.1.0.tgz
+    version: 0.1.0
+  log-search:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-09-30T13:46:55.224074469Z"
+    description: A Helm chart for Kubernetes
+    digest: 2658f2ae0bb3ac8eacfa20d15d8519b769b25aa1fce9083d493bff97226371f6
+    name: log-search
+    type: application
+    urls:
+    - https://gajjalareddy7012.github.io/helm_repository_new/log-search-0.1.0.tgz
+    version: 0.1.0
+  logindexer:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-09-30T13:46:55.226412825Z"
+    dependencies:
+    - name: log-search
+      repository: '@fantastic'
+      version: 0.1.0
+    - name: log-gateway
+      repository: '@fantastic'
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: 59e37364b9051ce60a64118ac03878e713fc88eeeeb74e7da1d46855c4d0e3eb
+    name: logindexer
+    type: application
+    urls:
+    - https://gajjalareddy7012.github.io/helm_repository_new/logindexer-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-09-30T13:46:55.222834522Z"
